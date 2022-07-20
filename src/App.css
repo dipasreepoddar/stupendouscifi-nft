@@ -33,6 +33,12 @@
   padding: 0;
 }
 
+.glow {
+  color: #fff;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
 .sub-text {
   font-size: 25px;
 }
@@ -192,7 +198,7 @@
 }
 
 .gif-image {
-  margin-top: 50px;
+  margin-top: 40px;
 }
 
 /* KeyFrames */
@@ -240,5 +246,26 @@
   }
   100% {
       background-position: 0 0;
+  }
+}
+
+@keyframes glow {
+  from {
+    text-shadow:
+    0 0 10px rgba(202,228,225,0.92),
+    0 0 20px rgba(202,228,225,0.34),
+    0 0 30px rgba(30,132,242,0.52),
+    0 0 40px rgba(30,132,242,0.92),
+    0 0 50px rgba(30,132,242,0.78),
+    0 0 60px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 20px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 40px rgba(30,132,242,0.58),
+    0 0 50px rgba(30,132,242,0.84),
+    0 0 60px rgba(30,132,242,0.88),
+    0 0 70px rgba(30,132,242,1);
   }
 }
